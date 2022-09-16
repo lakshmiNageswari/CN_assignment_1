@@ -67,7 +67,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             l = f.read(1024)
             while (l):
                 s.send(l)
-                print('Sent ',repr(l))
+                # print('Sent ',repr(l))
                 l = f.read(1024)
             f.close()
             s.close()

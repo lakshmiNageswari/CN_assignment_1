@@ -72,13 +72,13 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 with open('uploaded_file', 'wb') as f:
                     
                     while True:
-                        print('receiving data...')
+                        # print('receiving data...')
                         content = conn.recv(1024)
                      
                         if not content:
                             break
                     
-                        print(content)
+                        # print(content)
                         f.write(content)
                     f.close()
           
